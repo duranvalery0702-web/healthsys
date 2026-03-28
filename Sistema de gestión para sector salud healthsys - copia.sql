@@ -201,7 +201,7 @@ WHERE fecha_alta IS NOT NULL;
 
 SELECT *
 FROM Personal_Medico
-ORDER BY id_especialidad, anios_experiencia DESC;
+ORDER BY id_especialidad, años_experiencia DESC;
 
 SELECT 
     diagnostico_ingreso,
