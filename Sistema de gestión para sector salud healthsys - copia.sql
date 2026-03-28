@@ -27,7 +27,7 @@ CREATE TABLE Especialidad (
 
 CREATE TABLE Departamento (
     id_departamento INT AUTO_INCREMENT PRIMARY KEY,
-    nombre VARCHAR(100),
+    nombre VARCHAR(100), NOT NULL
     responsable VARCHAR(100),
     ubicacion VARCHAR(100),
     extension VARCHAR(20),
@@ -45,8 +45,8 @@ CREATE TABLE Consultorio (
 
 CREATE TABLE Personal_Medico (
     id_medico INT AUTO_INCREMENT PRIMARY KEY,
-    nombres VARCHAR(100),
-    apellidos VARCHAR(100),
+    nombres VARCHAR(100), NOT NULL
+    apellidos VARCHAR(100), NOT NULL
     id_especialidad INT,
     subespecialidad VARCHAR(100),
     grado_academico VARCHAR(100),
